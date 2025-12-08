@@ -1,0 +1,20 @@
+<div class="container px-5">
+  <article id="post-content"></article>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const file = params.get("file");
+
+if (!file) {
+  document.getElementById("post-content").innerHTML =
+    "<p>No post specified.</p>";
+} else {
+  fetch(`posts/${file}.md`)
+    .then(r => r.text())
+    .then(md => {
+      document.getElementById("post-content").innerHTML = marked.parse(md);
+      MathJax.typeset();
+    });
+}
+</script>
