@@ -1,4 +1,1 @@
-
-- Not
-- That 
-- Many
+- Best Master’s graduate of MSc Geoscience Programme, University Potsdam, Academic Year 2024/25
