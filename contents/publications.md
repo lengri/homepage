@@ -4,5 +4,5 @@
 
 #### Published
 
-- Ramesh Glückler, Rongwei Geng, <strong>Lennart Grimm</strong>, Izabella Baisheva, Ulrike Herzschuh, Kathleen R Stoof-Leichsenring, Stefan Kruse, Andrei Andreev, Luidmila Pestryakova, Elisabeth Dietze (2022) Holocene wildfire and vegetation dynamics in Central Yakutia, Siberia, reconstructed from lake-sediment proxies, Frontiers in Ecology and Evolution, DOI: [10.3389/fevo.2022.962906](https://doi.org/10.3389/fevo.2022.962906)
+- Ramesh Glückler, Rongwei Geng, <strong>Lennart Grimm</strong>, Izabella Baisheva, Ulrike Herzschuh, Kathleen R Stoof-Leichsenring, Stefan Kruse, Andrei Andreev, Luidmila Pestryakova, Elisabeth Dietze (2022) _Holocene wildfire and vegetation dynamics in Central Yakutia, Siberia, reconstructed from lake-sediment proxies_, Frontiers in Ecology and Evolution, DOI: [10.3389/fevo.2022.962906](https://doi.org/10.3389/fevo.2022.962906)
 

@@ -3,27 +3,49 @@
 <head>
   <meta charset="utf-8">
   <title>Blog</title>
-  <link href="../static/css/styles.css" rel="stylesheet">
-  <link href="../static/css/main.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="../static/css/main.css">
 </head>
-<body>    
 
-<nav>
-  <a href="../">← Home</a>
-</nav>
+<body id="page-top">
 
-<section class="container px-5">
-  <h1>Blog</h1>
+  <!-- shared header -->
+  <div id="site-header"></div>
 
-  <ul>
-    <li>
-      <a href="post.html?file=first-post.md">
-        The assumptions behind TCN erosion rates
-      </a>
-      <br><small>Jan 10, 2025</small>
-    </li>
-  </ul>
-</section>
+  <!-- page content -->
+  <section class="bg-gradient-primary-to-secondary-light mt5 md5">
+    <div class="container px-5">
+      <header>
+        <h2>Blog</h2>
+      </header>
+
+      <ul>
+        <li>
+          <a href="post.html?file=first-post.md">
+            The assumptions behind TCN erosion rates
+          </a>
+          <br>
+          <small>Jan 10, 2025</small>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- shared footer -->
+  <div id="site-footer"></div>
+
+  <!-- load header & footer -->
+  <script>
+    fetch("../includes/header.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("site-header").innerHTML = html);
+
+    fetch("../includes/footer.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("site-footer").innerHTML = html);
+  </script>
 
 </body>
 </html>

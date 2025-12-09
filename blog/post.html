@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Blog post</title>
 
-  <link href="../static/css/styles.css" rel="stylesheet">
-  <link href="../static/css/main.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="../static/css/main.css">
 
   <!-- Markdown -->
   <script src="../static/js/marked.min.js"></script>
@@ -22,30 +23,49 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body id="page-top">
 
-<nav class="container px-5 mt-3">
-  <a href="./">← Back to blog</a>
-</nav>
+  <!-- shared header -->
+  <div id="site-header"></div>
 
-<article class="container px-5" id="post-content"></article>
+  <!-- post content -->
+  <section class="bg-gradient-primary-to-secondary-light mt5 md5">
+    <div class="container px-5">
+      <article id="post-content"></article>
+    </div>
+  </section>
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const file = params.get("file");
+  <!-- shared footer -->
+  <div id="site-footer"></div>
 
-if (!file) {
-  document.getElementById("post-content").innerHTML =
-    "<p>No post specified.</p>";
-} else {
-  fetch(`posts/${file}`)
-    .then(r => r.text())
-    .then(md => {
-      document.getElementById("post-content").innerHTML = marked.parse(md);
-      MathJax.typeset();
-    });
-}
-</script>
+  <!-- load header & footer -->
+  <script>
+    fetch("../includes/header.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("site-header").innerHTML = html);
+
+    fetch("../includes/footer.html")
+      .then(r => r.text())
+      .then(html => document.getElementById("site-footer").innerHTML = html);
+  </script>
+
+  <!-- load markdown post -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file");
+
+    if (!file) {
+      document.getElementById("post-content").innerHTML =
+        "<p>No post specified.</p>";
+    } else {
+      fetch(`posts/${file}`)
+        .then(r => r.text())
+        .then(md => {
+          document.getElementById("post-content").innerHTML = marked.parse(md);
+          MathJax.typeset();
+        });
+    }
+  </script>
 
 </body>
 </html>
