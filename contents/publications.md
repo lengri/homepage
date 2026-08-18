@@ -14,6 +14,6 @@
 
 <strong>2022</strong>
 
-- Glückler, R., Geng, R., Grimm, L., Baisheva, I., Herzschuh, U., Stoof-Leichsenring, K. R., Kruse, S., Andreev, A., Pestryakova, L., & Dietze, E. (2022). _Holocene wildfire and vegetation dynamics in Central Yakutia, Siberia, reconstructed from lake-sediment proxies._ Frontiers in Ecology and Evolution, 10. [10.3389/fevo.2022.962906]<https://doi.org/10.3389/fevo.2022.962906>
+- Glückler, R., Geng, R., <strong>Grimm, L.</strong>, Baisheva, I., Herzschuh, U., Stoof-Leichsenring, K. R., Kruse, S., Andreev, A., Pestryakova, L., & Dietze, E. (2022). _Holocene wildfire and vegetation dynamics in Central Yakutia, Siberia, reconstructed from lake-sediment proxies._ Frontiers in Ecology and Evolution, 10. [10.3389/fevo.2022.962906]<https://doi.org/10.3389/fevo.2022.962906>
 
 
