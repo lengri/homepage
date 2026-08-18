@@ -1,1 +1,2 @@
 - Best Master’s graduate of MSc Geoscience Programme, University Potsdam, Academic Year 2024/25
+- Outstanding Student and PhD candidate Presentation (OSPP) at EGU General Assembly 2026
